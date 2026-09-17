@@ -1,5 +1,6 @@
 import type { Request, Response } from 'express';
 import { addUser, getUsers, greetings } from '../services/user.service';
+import { logger } from '../utils/logger';
 
 export const getGreetings = (_req: Request, res: Response) => {
   const message = greetings();
@@ -9,9 +10,11 @@ export const getGreetings = (_req: Request, res: Response) => {
 export const createUser = (req: Request, res: Response) => {
   const { name, email } = req.body;
   const user = addUser(name, email);
+  logger.info(`User created: ${JSON.stringify(user)}`);
   res.status(201).json(user);
 };
 
 export const getUser = (_req: Request, res: Response) => {
+  logger.info('Fetching user information');
   res.json({ users: getUsers() });
 };

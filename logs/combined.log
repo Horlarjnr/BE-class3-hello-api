@@ -1,0 +1,9 @@
+2026-09-17T06:16:58.833Z [WARN]: Unauthorized access attempt
+2026-09-17T06:19:13.464Z [INFO]: User is authenticated
+2026-09-17T06:41:30.599Z [INFO]: User is authenticated
+2026-09-17T06:41:30.602Z [INFO]: User created: {"name":"Horlar Dev","email":"Olaola@gmail.com","message":"User added successfully!"}
+2026-09-17T06:42:21.556Z [WARN]: Unauthorized access attempt
+2026-09-17T07:32:33.937Z [WARN]: Unauthorized access attempt
+2026-09-17T07:32:46.440Z [INFO]: User is authenticated
+2026-09-17T07:32:46.442Z [INFO]: User created: {"name":"Horlar Dev","email":"Olaola@gmail.com","message":"User added successfully!"}
+2026-09-17T07:33:17.149Z [INFO]: Fetching user information
